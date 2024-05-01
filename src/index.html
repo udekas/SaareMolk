@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+</head>
+<body>
+<section  #navigation>
+      <nav class="border-gray-200 bg-gray-900 dark:bg-gray-800 dark:border-gray-700">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="assets/SaareMölk_logo.jpg" class="h-8" alt="logo" />
+        
+    </a>
+    <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+      
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+    </button>
+    <div class="hidden w-full" id="navbar-hamburger">
+      <ul class="flex flex-col font-medium mt-4 rounded-lg bg-white  dark:border-gray-700">
+        <li>
+          <a href="#" class="block py-2 px-3 
+          bg-white rounded dark:bg-blue-600" aria-current="page">Avaleht</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Galerii</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">PDR Tehnoloogia</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+<section>
+  <div class="flex justify-center flex-col px-4 bg-gray-100 py-8">
+  <div class="px-4 text-justify mt-20" >
+    <h1 class="py-2 font-bold text-xl">Meist</h1>
+    <p class="leading-relaxed">
+        Saare Mölk OÜ on ettevõte mis pakub autoomanikele odavat ja kiiret mõlgieemaldus teenust. Mõlgieemalduseks kasutame PDR tehnikat. Võrreldes tavalise keretöö metoodikaga hoiab autoomanik kokku nii aega kui raha. PDR tehnikaga eemaldatakse mõlk spetsiaalseid vahendeid ja tehnoloogiat kasutades.
+        <span class="hidden" id="more-text">
+            Mõlkide eemaldamisega on võimalik säilitada auto originaal värvi terviklikkus.
+Mõlkide eemaldamist on võimalik kasutada kergemate vigastuste puhul näiteks parklates tekkinud vigastused teise auto ukse löögist, rahe kahjustused.
+Mõlgieemaldusprotsessi ei saa parandustöödel kasutada, kui:
+<br>*teravad mõlgid on liiga sügavad
+<br>*kahjustada on saanud alad, kus on kasutatud topeltmetalli
+<br>*mõlgid on sügava värvikahjustusega (nt lahtine värv)
+        </span>
+    </p>
+    <button id="toggle-btn" class="mt-2 text-gray-900 font-bold focus:outline-none">Loe veel</button>
+    <button id="hide-btn" class="hidden mt-2 text-gray-900 font-bold focus:outline-none">Peida</button>
+</div>
+
+<script>
+    const moreTextEl = document.getElementById('more-text');
+    const toggleBtnEl = document.getElementById('toggle-btn');
+    const hideBtnEl = document.getElementById('hide-btn');
+
+    toggleBtnEl.addEventListener('click', () => {
+        moreTextEl.classList.toggle('hidden');
+        toggleBtnEl.classList.toggle('hidden');
+        hideBtnEl.classList.toggle('hidden');
+    });
+
+    hideBtnEl.addEventListener('click', () => {
+        moreTextEl.classList.toggle('hidden');
+        toggleBtnEl.classList.toggle('hidden');
+        hideBtnEl.classList.toggle('hidden');
+    });
+</script>
+<div class="flex flex-col px-4 bg-gray-100 md:justify-between ">
+  <img src="assets/mobile-dent-repair-before-after-03-1024x1024.jpg" alt="">
+  <img src="assets/suv-paintless-dent-repair-before-and-after-1.jpg" alt="">
+</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+</html>
