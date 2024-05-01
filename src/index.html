@@ -45,9 +45,8 @@
   </div>
 </nav>
 </section>
-<section>
-  <div class="flex justify-center flex-col px-4 bg-gray-100 py-8">
-  <div class="px-4 text-justify mt-20" >
+<section #Meist >
+  <div class="px-4 text-justify mt-20">
     <h1 class="py-2 font-bold text-xl">Meist</h1>
     <p class="leading-relaxed">
         Saare Mölk OÜ on ettevõte mis pakub autoomanikele odavat ja kiiret mõlgieemaldus teenust. Mõlgieemalduseks kasutame PDR tehnikat. Võrreldes tavalise keretöö metoodikaga hoiab autoomanik kokku nii aega kui raha. PDR tehnikaga eemaldatakse mõlk spetsiaalseid vahendeid ja tehnoloogiat kasutades.
@@ -81,9 +80,47 @@ Mõlgieemaldusprotsessi ei saa parandustöödel kasutada, kui:
         hideBtnEl.classList.toggle('hidden');
     });
 </script>
-<div class="flex flex-col px-4 bg-gray-100 md:justify-between ">
-  <img src="assets/mobile-dent-repair-before-after-03-1024x1024.jpg" alt="">
-  <img src="assets/suv-paintless-dent-repair-before-and-after-1.jpg" alt="">
+</section>
+<section #Galerii >
+<div class="px-4 text-justify mt-20">
+  <h2 class="py-2 font-bold text-xl" >Galerii</h2>
+  <img src="assets/mobile-dent-repair-before-after-03-1024x1024.jpg" alt="picture">
+  <span class="hidden" id="more-pictures">
+      <img src="assets/suv-paintless-dent-repair-before-and-after-1.jpg" alt="picture">
+      <img src="" alt="picture">
+      <img src="" alt="picture">
+      <img src="" alt="picture">
+      <img src="" alt="picture">
+  </span>
+  <button id="open-btn" class="mt-2 text-gray-900 font-bold focus:outline-none">Veel pilte</button>
+  <button id="hide-button" class="hidden mt-2 text-gray-900 font-bold focus:outline-none">Peida</button>
+
+</div>
+
+<script>
+    const morePic = document.getElementById('more-pictures');
+    const openBtn = document.getElementById('open-btn');
+    const hideBtn = document.getElementById('hide-button');
+
+    openBtn.addEventListener('click', () => {
+        morePic.classList.toggle('hidden');
+        openBtn.classList.toggle('hidden');
+        hideBtn.classList.toggle('hidden');
+    });
+
+    hideBtn.addEventListener('click', () => {
+        morePic.classList.toggle('hidden');
+        openBtn.classList.toggle('hidden');
+        hideBtn.classList.toggle('hidden');
+    });
+</script>
+</section>
+<section>
+<div class="px-4 text-justify mt-20">
+  <h3 class="py-2 font-bold text-xl" >PDR Tehnoloogia</h3>
+</div>
+<div class="px-4 text-justify mt-20">
+<p1 class="leading-relaxed">PDR (Paintless Dent Repair) on autokere remondi meetod, mis võimaldab eemaldada väiksemaid mõlke ilma värvi kahjustamata. Protsess hõlmab spetsiaalsete tööriistade kasutamist, et õrnalt masseerida mõlki väljapoole, taastades selle algse kuju. See on kiire, taskukohane ja keskkonnasõbralik viis autokere remondiks.</p1>
 </div>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
