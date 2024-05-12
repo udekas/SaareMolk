@@ -11,7 +11,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 
   </head>
-  <body>
+  <body class="font-sans">
   <section  #navigation>
         <nav class="border-gray-200 bg-gray-900 dark:bg-gray-800 dark:border-gray-700">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -48,44 +48,21 @@
   <a name="Meist"></a>
   <section #Meist >
     <div class="container mx-auto p-4 text-justify mt-20">
-      <h1 class="py-2 font-bold text-xl">Meist</h1>
+      <h1 class="flex justify-center py-2 font-bold text-xl">Meist</h1>
       <p class="leading-relaxed">
-          Saare Mölk OÜ on ettevõte mis pakub autoomanikele odavat ja kiiret mõlgieemaldus teenust. Mõlgieemalduseks kasutame PDR tehnikat. Võrreldes tavalise keretöö metoodikaga hoiab autoomanik kokku nii aega kui raha. PDR tehnikaga eemaldatakse mõlk spetsiaalseid vahendeid ja tehnoloogiat kasutades.
-          <span class="hidden" id="more-text">
-              Mõlkide eemaldamisega on võimalik säilitada auto originaal värvi terviklikkus.
-  Mõlkide eemaldamist on võimalik kasutada kergemate vigastuste puhul näiteks parklates tekkinud vigastused teise auto ukse löögist, rahe kahjustused.
-  Mõlgieemaldusprotsessi ei saa parandustöödel kasutada, kui:
-  <br>*teravad mõlgid on liiga sügavad
-  <br>*kahjustada on saanud alad, kus on kasutatud topeltmetalli
-  <br>*mõlgid on sügava värvikahjustusega (nt lahtine värv)
-          </span>
+        Saare Mölk OÜ on ettevõte mis pakub autoomanikele odavat ja kiiret mõlgieemaldus teenust. Mõlgieemalduseks kasutame PDR tehnikat. Võrreldes tavalise keretöö metoodikaga hoiab autoomanik kokku nii aega kui raha. PDR tehnikaga eemaldatakse mõlk spetsiaalseid vahendeid ja tehnoloogiat kasutades. Mõlkide eemaldamisega on võimalik säilitada auto originaal värvi terviklikkus.
+        Mõlkide eemaldamist on võimalik kasutada kergemate vigastuste puhul näiteks parklates tekkinud vigastused teise auto ukse löögist, rahe kahjustused.
+        <br>Mõlgieemaldusprotsessi ei saa parandustöödel kasutada, kui:
+        <br>*teravad mõlgid on liiga sügavad
+        <br>*kahjustada on saanud alad, kus on kasutatud topeltmetalli
+        <br>*mõlgid on sügava värvikahjustusega (nt lahtine värv)
       </p>
-      <button id="toggle-btn" class="mt-2 text-gray-900 font-bold focus:outline-none">Loe veel</button>
-      <button id="hide-btn" class="hidden mt-2 text-gray-900 font-bold focus:outline-none">Peida</button>
-  </div>
-
-  <script>
-      const moreTextEl = document.getElementById('more-text');
-      const toggleBtnEl = document.getElementById('toggle-btn');
-      const hideBtnEl = document.getElementById('hide-btn');
-
-      toggleBtnEl.addEventListener('click', () => {
-          moreTextEl.classList.toggle('hidden');
-          toggleBtnEl.classList.toggle('hidden');
-          hideBtnEl.classList.toggle('hidden');
-      });
-
-      hideBtnEl.addEventListener('click', () => {
-          moreTextEl.classList.toggle('hidden');
-          toggleBtnEl.classList.toggle('hidden');
-          hideBtnEl.classList.toggle('hidden');
-      });
-  </script>
-  </section>
-  <a name="Galerii"></a>
+    </div>
+</section>
+<a name="Galerii"></a>
   <section #Galerii >
-  <div class="container mx-auto p-4 text-justify mt-20">
-    <h2 class="py-2 font-bold text-xl" >Galerii</h2>
+  <div class="container justify-center mx-auto p-4 text-justify mt-20">
+    <h2 class="flex justify-center py-2 font-bold text-xl" >Galerii</h2>
     <img src="assets/mobile-dent-repair-before-after-03-1024x1024.jpg" alt="picture">
     <span class="hidden" id="more-pictures">
         <img src="assets/suv-paintless-dent-repair-before-and-after-1.jpg" alt="picture">
@@ -120,7 +97,7 @@
   <a name="PDR"></a>
   <section #PDR >
   <div class="container mx-auto p-4 text-justify mt-20">
-    <h3 class="py-2 font-bold text-xl" >PDR Tehnoloogia</h3>
+    <h3 class="flex justify-center py-2 font-bold text-xl" >PDR Tehnoloogia</h3>
   </div>
   <div class="container mx-auto p-4 text-justify mt-20">
   <p1 class="leading-relaxed">PDR (Paintless Dent Repair) on autokere remondi meetod, mis võimaldab eemaldada väiksemaid mõlke ilma värvi kahjustamata. Protsess hõlmab spetsiaalsete tööriistade kasutamist, et õrnalt masseerida mõlki väljapoole, taastades selle algse kuju. See on kiire, taskukohane ja keskkonnasõbralik viis autokere remondiks.</p1>
@@ -129,7 +106,7 @@
   <a name="Contact"></a>
   <section #contact >
 <div class="container mx-auto p-4">
-    <h2 class="text-2xl font-bold mb-4">Võta meiega ühendust</h2>
+    <h2 class=" flex justify-center text-2xl font-bold mb-4">Võta meiega ühendust</h2>
     <form action="#" method="post">
         <div class="mb-4">
             <label for="name" class="block font-medium">Nimi:</label>
@@ -151,7 +128,7 @@
     </form>
 </div>
   </section>
-  <footer class="container mx-auto p-4 border-lightgrey">
+  <footer class="flex justify-center container mx-auto p-4 border-gray-400">
     <p>Made by Marek</p>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
